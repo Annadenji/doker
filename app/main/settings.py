@@ -27,6 +27,7 @@ SECRET_KEY = environ.get('SECRET_KEY')
 DEBUG = int(environ.get('DEBUG', default=0))
 
 ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS').split(' ')
+#ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home'
 ]
 
 MIDDLEWARE = [
